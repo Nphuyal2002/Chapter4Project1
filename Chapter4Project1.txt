@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() 
+{
+    int n, tens, ones, reversed;
+
+    // Asking user for input
+    printf("Enter a two-digit number: ");
+    scanf("%d", &n); // This reads the number using %d
+
+    // Extract digits
+    ones = n % 10;  // Last digit
+    tens = n / 10;  // First digit
+
+    // Reverse the number
+    reversed = (ones * 10) + tens;
+
+    // Print the result
+    printf("The reversal is: %d\n", reversed);
+
+    return 0;
+}
+
